@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../верстка повторение/styles.css"
+    />
+    <title>maket</title>
+    <style>
+      @font-face {
+        font-family: "Raleway-Regular";
+        src: url("./font/Raleway-Regular");
+        src: url("./font/Raleway-Regular") format("embedded-opentype"),
+          url("./font/fontello.woff?49017336") format("woff"),
+          url("./font/fontello.ttf?49017336") format("truetype"),
+          url("./font/fontello.svg?49017336#fontello") format("svg");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      .demo-icon {
+        font-family: "fontello";
+        font-style: normal;
+        font-weight: normal;
+
+        display: inline-block;
+        text-decoration: inherit;
+        width: 1em;
+        margin-right: 0.2em;
+        text-align: center;
+        /* opacity: .8; */
+
+        /* For safety - reset parent styles, that can break glyph codes*/
+        font-variant: normal;
+        text-transform: none;
+
+        /* fix buttons height, for twitter bootstrap */
+        line-height: 1em;
+
+        /* Animation center compensation - margins should be symmetric */
+        /* remove if not needed */
+        margin-left: 0.2em;
+
+        /* You can be more comfortable with increased icons size */
+        /* font-size: 120%; */
+
+        /* Font smoothing. That was taken from TWBS */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+        /* Uncomment for 3D effect */
+        /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="welcome-part">
+      <header class="row">
+        <div class="logo">
+          <img src="./images/Shape 1@1X.png" alt="logo" />
+          <div class="small-colomn">
+            <h1>DART</h1>
+            <span>SERVICE MANAGER</span>
+          </div>
+        </div>
+
+        <nav class="navigation-menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Extension</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </nav>
+
+        <button class="signing">sign up</button>
+      </header>
+      <div class="main-welcome-text">
+        <div class="left-colomn-text">
+          <h1>lOREM IPSUM DOLOR SIT AMET</h1>
+          <span
+            >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamc laboris nisi ut
+            aliquip ex ea commodo consequat.</span
+          >
+          <div class="two-buttons">
+            <button class="buy">BUY NOW</button>
+            <button class="free">TRY FOR FREE</button>
+          </div>
+        </div>
+        <video
+          src="./images/zoom_11.09.20.mp4"
+          controls
+          poster="./images/BG@1X.png"
+        >
+          <overlay class="overlay">
+            <div class="play-button">
+              <i class="demo-icon icon-right-dir">&#xe800;</i>
+            </div>
+            <span class="video-text">WATCH THE VIDEO</span>
+          </overlay>
+        </video>
+      </div>
+    </div>
+
+    <div class="section-easy-useful">
+      <div class="center-text">
+        <h1>Easy & Useful</h1>
+        <h2>Project Management Tool</h2>
+        <span
+          >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud
+        </span>
+      </div>
+
+      <div class="three-columns">
+        <div class="first-column">
+          <i class="demo-icon icon-calendar-inv">&#xe808;</i>
+          <h1>Title Goes Here</h1>
+          <span
+            >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
+          >
+        </div>
+        <div class="second-column">
+          <i class="demo-icon icon-user-female">&#xf063;</i>
+          <h1>Title Goes Here</h1>
+          <span
+            >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
+          >
+        </div>
+        <div class="third-column">
+          <i class="demo-icon icon-user-female">&#xf063;</i>
+          <h1>Title Goes Here</h1>
+          <span
+            >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
+          >
+        </div>
+      </div>
+
+      <button class="get-started">GET STARTED</button>
+
+      <div class="colored-columns">
+        <div class="light-blue-column">
+          <div class="color-around">
+            <i class="demo-icon building-filled">&#xf1ad;</i>
+          </div>
+          <div class="two-spans">
+            <span>12000+</span>
+            <span>Business</span>
+          </div>
+        </div>
+        <div class="dark-blue-column">
+          <div class="color-around">
+            <i class="demo-icon icon-download">&#xe807;</i>
+          </div>
+          <div class="two-spans">
+            <span>60000+</span>
+            <span>Downloads</span>
+          </div>
+        </div>
+        <div class="dark-violet-column">
+          <div class="color-around">
+            <i class="demo-icon user-female">&#xf063;</i>
+          </div>
+          <div class="two-spans">
+            <span>30000+</span>
+            <span>Free Installs</span>
+          </div>
+        </div>
+        <div class="light-violet-column">
+          <div class="color-around">
+            <i class="demo-icon icon-download">&#xe807;</i>
+          </div>
+          <div class="two-spans">
+            <span>40000+</span>
+            <span>Pro Users</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="services">
+      <div class="top-text">
+        <h1>Services</h1>
+        <span
+          >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna</span
+        >
+      </div>
+
+
+<div class="lines-in-column">
+
+      <div class="big-shadow">
+        <div class="header-line">
+          <div class="like-logo">
+            <i class="demo-icon icon-chart-line">&#xf201;</i>
+            <h1>STATISTICS</h1>
+          </div>
+          <button class="down-btn">
+            <i class="demo-icon down-dir">&#xe805;</i>
+          </button>
+        </div>
+        <div class="main-hidden-text">
+          <img src="./images/Rounded Rectangle 53@1X.png" />
+          <div class="spans">
+            <span
+              >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam,
+            </span>
+            <span
+              >quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="next-header-line">
+        <div class="like-logo">
+          <i class="demo-icon icon-mail-alt">&#xf0e0;</i>
+          <h1>INBOX</h1>
+        </div>
+        <button class="down-btn">
+          <i class="demo-icon down-dir">&#xe805;</i>
+        </button>
+      </div>
+
+      <div class="next-header-line">
+        <div class="like-logo">
+          <i class="demo-icon icon-users">&#xe804;</i>
+          <h1>TEAM</h1>
+        </div>
+        <button class="down-btn">
+          <i class="demo-icon down-dir">&#xe805;</i>
+        </button>
+      </div>
+
+      <div class="next-header-line">
+        <div class="like-logo">
+          <i class="demo-icon icon-cog">&#xe803;</i>
+          <h1>SETTINGS</h1>
+        </div>
+        <button class="down-btn">
+          <i class="demo-icon down-dir">&#xe805;</i>
+        </button>
+      </div>
+
+      <div class="next-header-line">
+        <div class="like-logo">
+          <i class="demo-icon icon-rss">&#xf09e;</i>
+          <h1>FEED</h1>
+        </div>
+        <button class="down-btn">
+          <i class="demo-icon down-dir">&#xe805;</i>
+        </button>
+      </div>
+
+      </div>
+
+      <div class="green-background">
+
+        <div class="left-part">
+          <h1>What our customers
+            have to say about us.</h1>
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna</span>
+          <button class="starting">GET STARTED</button>
+        </div>
+
+        <div class="right-part">
+          <div class="line-with-photo">
+            <img src="./images/Ellipse 2@1X.png">
+            <div class="white-background">
+              <h1>John Doe</h1>
+              <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</span>
+            </div>
+          </div>
+
+          <div class="line-with-photo">
+            <img src="./images/Ellipse 21 copy@1X.png">
+            <div class="white-background">
+              <h1>Khalessi</h1>
+              <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      </div>
+
+    </div>
+  </body>
+</html>
