@@ -6,6 +6,10 @@
   font-family: "fontello";
   src: url("./font/fontello.ttf");
 }
+@font-face {
+  font-family: "Raleway-LightItalic";
+  src: url("./font/Raleway-LightItalic.ttf");
+}
 
 @font-face {
   font-family: "Raleway-Thin";
@@ -16,6 +20,14 @@
   font-family: "Raleway-Bolt";
   src: url("./font/Raleway-Bold.ttf");
 }
+@font-face {
+  font-family: "Raleway-SemiBolt";
+  src: url("./font/Raleway-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Raleway-ExtraBolt";
+  src: url("./font/Raleway-ExtraBold.ttf");
+}
 
 body {
   font-family: "Raleway-Regular";
@@ -24,7 +36,9 @@ body {
 }
 
 .welcome-part {
-  background-image: url(./images/Color\ Fill\ 1@1X.png);
+  background-image: url(./images/water-1330252_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 3% 3% 0 3%;
 }
 .row {
@@ -83,7 +97,7 @@ body {
   width: 40%;
 }
 .left-colomn-text h1 {
-  font-family: "Raleway-Bold";
+  font-family: "Raleway-ExtraBolt";
   font-size: 55px;
   padding: 0;
   margin: 0;
@@ -126,7 +140,9 @@ body {
   padding: 10px 15px;
   box-shadow: -5px 6px 7px 0 rgb(161, 160, 160);
 }
-
+.for-video {
+  position: relative;
+}
 .overlay {
   position: absolute;
 }
@@ -135,6 +151,7 @@ body {
   height: 61px;
   width: 61px;
   background-color: black;
+  color: white;
   border-radius: 5px;
 }
 
@@ -144,7 +161,6 @@ body {
   justify-content: space-between;
 }
 .welcome-part video {
-  position: relative;
   margin-top: 10%;
   height: 321px;
   width: 601px;
@@ -193,7 +209,7 @@ body {
 }
 .first-column .demo-icon {
   font-size: 70px;
-  color: #b388ff;
+  color: #6dbdec;
   margin: 0 0 5% 0;
 }
 .second-column {
@@ -203,7 +219,7 @@ body {
 }
 .second-column .demo-icon {
   font-size: 70px;
-  color: #80d8ff;
+  color: #56e4dd;
   margin: 0 0 5% 0;
 }
 .third-column {
@@ -213,7 +229,7 @@ body {
 }
 .third-column .demo-icon {
   font-size: 70px;
-  color: #ea80fc;
+  color: #67939e;
   margin: 0 0 5% 0;
 }
 
@@ -223,7 +239,7 @@ body {
   flex-direction: row;
   justify-self: center;
   height: 20%;
-  background-color: #1de9b6;
+  background-color: #2b7fec;
   border-radius: 3px;
   border: 0px;
   padding: 1% 2%;
@@ -281,24 +297,24 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #b388ff;
+  background-color: #2455b1;
   width: 25%;
   padding: 3% 7%;
 }
 .dark-violet-column .demo-icon {
   font-size: 30px;
-  color: #b388ff;
+  color: #2455b1;
 }
 .light-violet-column {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #ea80fc;
+  background-color: #80a1fc;
   width: 25%;
   padding: 3% 7%;
 }
 .light-violet-column .demo-icon {
-  color: #ea80fc;
+  color: #80a1fc;
   font-size: 30px;
 }
 
@@ -316,27 +332,19 @@ body {
 
 .big-shadow {
   width: 50%;
-  margin: 5% 23% 0;
+  margin: 5% 23% 3%;
   box-shadow: -7px 5px 10px rgb(168, 168, 168);
-  padding: 1% 2%;
+  position: relative;
 }
 
 .big-shadow .header-line {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 0 2%;
+  margin: 0;
+  padding: 2%;
 }
-.lines-in-column .next-header-line {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0 0 2%;
-  width: 50%;
-  margin: 2% 23%;
-  box-shadow: -7px 5px 10px rgb(168, 168, 168);
-  padding: 1% 2%;
-}
+
 .lines-in-column .next-header-line h1 {
   font-size: 15px;
   color: #061e37;
@@ -353,6 +361,21 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.8);
+  background-color: white;
+  /* transition: 0.4s ease-in-out; */
+  padding: 3%;
+  box-shadow: -7px 5px 10px rgb(168, 168, 168);
+}
+
+.big-shadow:hover .main-hidden-text {
+  visibility: visible;
+  opacity: 2;
+  transform: scale(1);
+  z-index: 5;
 }
 .spans {
   display: flex;
@@ -380,24 +403,121 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-image: url(./images/BG@3X.png);
+  background-image: url(./images/water-1330252_1920.jpg);
 }
 .left-part {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  width: 45%;
+  margin: 7% 0 0 5%;
+  color: white;
 }
-
-.line-with-photo {
+.left-part h1 {
+  font-size: 45px;
+  font-family: "Raleway-SemiBold";
+}
+.left-part span {
+  font-size: 15px;
+}
+.left-part button {
+  color: white;
+  font-size: 15px;
+  background-color: black;
+  border: 0;
+  padding: 4% 0;
+  margin: 15% 28%;
+  border-radius: 5px;
+}
+.right-part button {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  background-color: transparent;
+  border: 0;
+  margin: 3% 0 3% 38%;
+}
+.right-part .line-with-photo {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 75%;
+  margin: 0;
 }
 .line-with-photo img {
   height: 10%;
   width: 10%;
+  margin-top: 7%;
 }
 .white-background {
   background-color: white;
   margin: 4%;
+  padding: 3%;
+  border-radius: 5px;
+}
+.white-background h1 {
+  font-size: 18px;
+  font-family: "Raleway-SemiBold";
+}
+.white-background span {
+  font-family: "Raleway-LightItalic";
+  font-size: 15px;
+}
+.our-team {
+  text-align: center;
+  padding: 0 15%;
+}
+.our-team h1 {
+  font-family: "Raleway-SemiBold";
+  color: #061e37;
+  font-size: 45px;
+}
+.our-team span {
+  color: #b0bec5;
+  font-size: 15px;
+}
+
+.imgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5% 20%;
+}
+.white-img:hover {
+  transform: scale(1.6);
+  /* Увеличиваем масштаб */
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: darken;
+}
+.imgs .white-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(245, 250, 249, 0.9);
+  background-blend-mode: multiply;
+  /* height: 15%; */
+  width: 20%;
+  margin-top: 5%;
+  border: 10px solid white;
+  box-shadow: -7px 5px 10px rgb(168, 168, 168);
+  border-radius: 50%;
+}
+.text-under h1 {
+  font-size: 18px;
+  color: #061e37;
+  font-family: "Raleway-Bold";
+}
+.text-under span {
+  color: #90a4ae;
+  font-size: 15px;
+  width: 45%;
+  text-align: center;
+}
+.icons-row {
+  margin: 3% 25% 5% 25%;
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: center;
+  color: #90a4ae;
+  font-size: 20px;
 }
